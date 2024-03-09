@@ -10,7 +10,15 @@ import java.util.Scanner;
  */
 public class AnnosBisiestos {
     public static String evaluar(int anno){
-        // TODO: Coloca aquí el código del ejercicio 2: Años bisiestos
+        if (anno<1582 && anno % 4==0){
+            System.out.println(anno + " es bisiesto");
+
+        } else if (anno>1582 && anno%400==0){
+            System.out.println(anno + " es bisiesto");
+
+    }else {
+            System.out.println(anno + " no es bisiesto");
+        }
         return "";
     }
     

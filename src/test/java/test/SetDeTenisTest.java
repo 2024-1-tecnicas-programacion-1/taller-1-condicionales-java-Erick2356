@@ -19,6 +19,18 @@ public class SetDeTenisTest {
         String valorActual = SetDeTenis.evaluar(4, 5);
         assertEquals(valorEsperado, valorActual);
     }
+    public void testGanoA() {
+        String valorEsperado = "Ganó A";
+        String valorActual = SetDeTenis.evaluar(6, 4);
+        assertEquals(valorEsperado, valorActual);
+    } public void testGanoB() {
+        String valorEsperado = "Ganó B";
+        String valorActual = SetDeTenis.evaluar(4, 6);
+        assertEquals(valorEsperado, valorActual);
+    }public void testInvalido() {
+        String valorEsperado = "Inválido";
+        String valorActual = SetDeTenis.evaluar(7, 3);
+        assertEquals(valorEsperado, valorActual);
     
     // TODO: Agrega tus otros casos de prueba aquí
 }
